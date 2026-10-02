@@ -16,7 +16,7 @@ function TechnologyList({ stack, setStack }) {
   console.log("Added:", technology.name);
 };
   useEffect(() => {
-    fetch("public/data/technologies.json")
+    fetch("/data/technologies.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load technology data");
